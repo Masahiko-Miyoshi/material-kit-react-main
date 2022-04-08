@@ -28,7 +28,7 @@ jobs:
           npm run test --if-present
 # Add 2022.4.8 By MM
       - name: Zip artifact for deployment
-        run: zip -r release.zip * .vscode .github .next .eslintrc.json .deployment
+        run: zip -r release.zip * .vscode .github .next .eslintrc.json .deployment -x yarn.lock
  # 
       - name: Upload artifact for deployment job
         uses: actions/upload-artifact@v2
