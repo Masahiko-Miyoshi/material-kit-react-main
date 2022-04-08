@@ -45,10 +45,6 @@ jobs:
       url: ${{ steps.deploy-to-webapp.outputs.webapp-url }}
 
     steps:
-
-      - name: Change yarn timeout
-        run: yarn install --network-timeout 1200000
-
       - name: Download artifact from build job
         uses: actions/download-artifact@v2
         with:
