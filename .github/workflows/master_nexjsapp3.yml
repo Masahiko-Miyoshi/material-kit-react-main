@@ -26,12 +26,16 @@ jobs:
           npm install
           npm run build --if-present
           npm run test --if-present
-
+# Add 2022.4.8 By MM
+      - name: Zip artifact for deployment
+        run: zip -r release.zip * .vscode .github .next .eslintrc.json .deployment
+ # 
       - name: Upload artifact for deployment job
         uses: actions/upload-artifact@v2
         with:
           name: node-app
-          path: .
+          #path: .
+          path: release.zip
 
   deploy:
     runs-on: ubuntu-latest
@@ -53,4 +57,5 @@ jobs:
           app-name: 'NexjsApp3'
           slot-name: 'Production'
           publish-profile: ${{ secrets.AZUREAPPSERVICE_PUBLISHPROFILE_649586DB6E0B46EEA6E60F59F477A3A7 }}
-          package: .
+          #package: .
+          package: release.zip
