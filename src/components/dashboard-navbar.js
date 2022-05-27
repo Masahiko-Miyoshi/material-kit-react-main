@@ -6,6 +6,8 @@ import SearchIcon from '@mui/icons-material/Search';
 import { Bell as BellIcon } from '../icons/bell';
 import { UserCircle as UserCircleIcon } from '../icons/user-circle';
 import { Users as UsersIcon } from '../icons/users';
+import Typography from '@mui/material/Typography';
+
 
 const DashboardNavbarRoot = styled(AppBar)(({ theme }) => ({
   backgroundColor: theme.palette.background.paper,
@@ -20,27 +22,44 @@ export const DashboardNavbar = (props) => {
       <DashboardNavbarRoot
         sx={{
           left: {
-            lg: 280
+            lg: 24
           },
           width: {
-            lg: 'calc(100% - 280px)'
+            lg: 'calc(100% - 24px)'
+          },
+          // Add
+          height:{
+            lg: 64
           }
         }}
         {...other}>
         <Toolbar
           disableGutters
           sx={{
-            minHeight: 64,
+            // minHeight:'32px',
+            minHeight: '64px',
             left: 0,
-            px: 2
+            px: 2,
+            backgroundColor: '#000000'
           }}
         >
+          <Typography variant="h6" 
+            component="div"
+            color="inherit"
+            sx={{ flexGrow: 1,
+            }}
+          >
+            News
+          </Typography>
+
+
           <IconButton
             onClick={onSidebarOpen}
             sx={{
               display: {
                 xs: 'inline-flex',
-                lg: 'none'
+                lg: 'none',
+                
               }
             }}
           >
@@ -51,7 +70,7 @@ export const DashboardNavbar = (props) => {
               <SearchIcon fontSize="small" />
             </IconButton>
           </Tooltip>
-          <Box sx={{ flexGrow: 1 }} />
+          {/* <Box sx={{ flexGrow: 1 }} />
           <Tooltip title="Contacts">
             <IconButton sx={{ ml: 1 }}>
               <UsersIcon fontSize="small" />
@@ -77,7 +96,7 @@ export const DashboardNavbar = (props) => {
             src="/static/images/avatars/avatar_1.png"
           >
             <UserCircleIcon fontSize="small" />
-          </Avatar>
+          </Avatar> */}
         </Toolbar>
       </DashboardNavbarRoot>
     </>

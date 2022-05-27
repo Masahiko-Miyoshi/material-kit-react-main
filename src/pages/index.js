@@ -9,6 +9,7 @@ import { TotalCustomers } from '../components/dashboard/total-customers';
 import { TotalProfit } from '../components/dashboard/total-profit';
 import { TrafficByDevice } from '../components/dashboard/traffic-by-device';
 import { DashboardLayout } from '../components/dashboard-layout';
+import { MyMap } from '../components/dashboard/mymap';
 
 const Dashboard = () => (
   <>
@@ -21,14 +22,27 @@ const Dashboard = () => (
       component="main"
       sx={{
         flexGrow: 1,
-        py: 8
+        py: 1,
+        // px: 0,
+        // Add
+        backgroundColor: '#000000',
       }}
     >
-      <Container maxWidth={false}>
+      <Container maxWidth={false} >
         <Grid
           container
           spacing={3}
         >
+          <Grid
+            item
+            lg={12}
+            sm={12}
+            xl={8}
+            xs={12}
+          >
+            <MyMap />
+          </Grid>
+
           <Grid
             item
             lg={3}

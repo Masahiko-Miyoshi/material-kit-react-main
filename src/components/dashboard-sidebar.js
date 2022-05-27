@@ -20,43 +20,44 @@ const items = [
   {
     href: '/',
     icon: (<ChartBarIcon fontSize="small" />),
-    title: 'Dashboard'
+    title: 'マップ'
   },
   {
     href: '/customers',
     icon: (<UsersIcon fontSize="small" />),
-    title: 'Customers'
+    title: 'リモート'
   },
   {
     href: '/products',
     icon: (<ShoppingBagIcon fontSize="small" />),
-    title: 'Products'
+    title: 'ボット'
   },
+
   {
     href: '/account',
     icon: (<UserIcon fontSize="small" />),
-    title: 'Account'
-  },
-  {
-    href: '/settings',
-    icon: (<CogIcon fontSize="small" />),
-    title: 'Settings'
-  },
-  {
-    href: '/login',
-    icon: (<LockIcon fontSize="small" />),
-    title: 'Login'
-  },
-  {
-    href: '/register',
-    icon: (<UserAddIcon fontSize="small" />),
-    title: 'Register'
-  },
-  {
-    href: '/404',
-    icon: (<XCircleIcon fontSize="small" />),
-    title: 'Error'
+    title: '設定'
   }
+  // {
+  //   href: '/settings',
+  //   icon: (<CogIcon fontSize="small" />),
+  //   title: 'Settings'
+  // },
+  // {
+  //   href: '/login',
+  //   icon: (<LockIcon fontSize="small" />),
+  //   title: 'Login'
+  // },
+  // {
+  //   href: '/register',
+  //   icon: (<UserAddIcon fontSize="small" />),
+  //   title: 'Register'
+  // },
+  // {
+  //   href: '/404',
+  //   icon: (<XCircleIcon fontSize="small" />),
+  //   title: 'Error'
+  // }
 ];
 
 export const DashboardSidebar = (props) => {
@@ -87,6 +88,7 @@ export const DashboardSidebar = (props) => {
         sx={{
           display: 'flex',
           flexDirection: 'column',
+          // flexDirection: 'row',
           height: '100%'
         }}
       >
@@ -148,7 +150,7 @@ export const DashboardSidebar = (props) => {
         <Divider
           sx={{
             borderColor: '#2D3748',
-            my: 3
+            my: 2
           }}
         />
         <Box sx={{ flexGrow: 1 }}>
@@ -224,11 +226,13 @@ export const DashboardSidebar = (props) => {
         PaperProps={{
           sx: {
             backgroundColor: 'neutral.900',
+            // backgroundColor: '#333c5e',
             color: '#FFFFFF',
-            width: 200
+            width: 180
           }
         }}
         variant="permanent"
+        // variant="persistent"
       >
         {content}
       </Drawer>
@@ -243,8 +247,9 @@ export const DashboardSidebar = (props) => {
       PaperProps={{
         sx: {
           backgroundColor: 'neutral.900',
+          // backgroundColor: '#333c5e',
           color: '#FFFFFF',
-          width: 200
+          width: 180
         }
       }}
       sx={{ zIndex: (theme) => theme.zIndex.appBar + 100 }}
