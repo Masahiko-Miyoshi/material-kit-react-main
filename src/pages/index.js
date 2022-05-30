@@ -10,6 +10,7 @@ import { TotalProfit } from '../components/dashboard/total-profit';
 import { TrafficByDevice } from '../components/dashboard/traffic-by-device';
 import { DashboardLayout } from '../components/dashboard-layout';
 import { MyMap } from '../components/dashboard/mymap';
+import { PowerBI } from '../components/dashboard/powerbi';
 
 const Dashboard = () => (
   <>
@@ -41,6 +42,16 @@ const Dashboard = () => (
             xs={12}
           >
             <MyMap />
+          </Grid>
+
+          <Grid
+            item
+            lg={12}
+            sm={12}
+            xl={8}
+            xs={12}
+          >
+            <PowerBI />
           </Grid>
 
           <Grid
