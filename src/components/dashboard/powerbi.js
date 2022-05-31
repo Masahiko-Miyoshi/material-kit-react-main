@@ -14,7 +14,7 @@ export const PowerBI= (props) => (
         <iframe title="testOpen" 
                 width="1000" 
                 height="541.25" 
-                src="https://app.powerbi.com/view?r=eyJrIjoiODllMGJjZjgtNzkwYi00NTFjLWI0NWQtYjM0NmY3NGJlN2JlIiwidCI6IjA5ZDlkYTM0LTY3ZjEtNGYyNC04MGQyLTc3NTgxNWFhMGM0NiJ9" 
+                src="https://app.powerbi.com/view?r=eyJrIjoiODllMGJjZjgtNzkwYi00NTFjLWI0NWQtYjM0NmY3NGJlN2JlIiwidCI6IjA5ZDlkYTM0LTY3ZjEtNGYyNC04MGQyLTc3NTgxNWFhMGM0NiJ9&pageName=ReportSection"
                 frameBorder="0" 
                 allowFullScreen="true">
         </iframe>

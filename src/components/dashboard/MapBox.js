@@ -46,7 +46,8 @@ export default function MapBox() {
             exaggeration: 1.5
           }}
           // style={{width: 2000, height: 1000}}
-          style={{width: 1400, height: 500}}
+           style={{width: 1400, height: 600}}
+          //  style={{width: 'auto', height: 'auto' }}
           
           // mapStyle="mapbox://styles/mapbox/streets-v11"
            mapStyle = "mapbox://styles/miyoshimasahiko/ckymdbhj60zo014mob9ayej95"
