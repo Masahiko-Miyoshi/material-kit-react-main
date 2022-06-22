@@ -227,6 +227,7 @@ export const DashboardSidebar = (props) => {
           sx: {
             backgroundColor: 'neutral.900',
             // backgroundColor: '#333c5e',
+            // backgroundColor: '#ffffff',
             color: '#FFFFFF',
             width: 180
           }

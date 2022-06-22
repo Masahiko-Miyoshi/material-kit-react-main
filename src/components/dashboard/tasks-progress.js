@@ -18,7 +18,7 @@ export const TasksProgress = (props) => (
             gutterBottom
             variant="overline"
           >
-            TASKS PROGRESS
+            装置稼働率　　　　　　
           </Typography>
           <Typography
             color="textPrimary"
